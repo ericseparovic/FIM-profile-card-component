@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Profile card component</title>
 </head>
-<body>
-  <main class="card">
-    <div class="card__data">
-      <h2>Victor Crest</h2>
-      <p class="card__year">26</p>
-      <p class="card__city">London</p>
-    </div>
 
-    <div class="card__statistics">
-      <div class="card__followers">
-        <p>80K</p>
-        <p>Followers</p>
+<body>
+  <div class="image__top"></div>
+  <div class="image__bottom"></div>
+
+  <main class="flex">
+    <article class="card">
+      <div class="card__header">
+        <img src="./images/bg-pattern-card.svg" alt="">
       </div>
-      <div class="card__likes">
-        <p>803K</p>
-        <p>Likes</p>
+      <div class="card__data">
+        <div class="card__name">
+          <img class="card__image" src="./images/image-victor.jpg" alt="">
+          <h1>Victor Crest</h1>
+          <p class="card__year">26</p>
+        </div>
+        <p class="card__city">London</p>
       </div>
-      <div class="card__photos">
-        <p>1.4K</p>
-        <p>Photos</p>
+      <div class="card__statistics">
+        <div class="card__followers">
+          <p>80K</p>
+          <p class="card__statistics__title">Followers</p>
+        </div>
+        <div class="card__likes">
+          <p>803K</p>
+          <p class="card__statistics__title">Likes</p>
+        </div>
+        <div class="card__photos">
+          <p>1.4K</p>
+          <p class="card__statistics__title">Photos</p>
+        </div>
       </div>
-    </div>
+    </article>
   </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
+
 </html>
